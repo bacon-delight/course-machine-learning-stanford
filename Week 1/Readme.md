@@ -42,8 +42,48 @@ Basic definition and understanding of what is Machine Learning and what are the 
 ## Supervised Learning
 
 * Assumes that right answers are given to the algorithm in the training set for all cases
+
 * Also called "Regression Problems", predicts continuous valued output
-* Can also be a Classification Problem, which can predict discrete values (0 or 1)
+
+  ![Housing Price Prediction](images/image01.PNG)
+
+* Can also be a Classification Problem, which can predict discrete values
+
+  ![Tumor Classification](images/image02.PNG)
+
+* Small and limited number of features
+
+> Are the following problems classification or regression problems?
+>
+> 1. You have a large inventory of identical items. You want to predict how many of these will sell over the next three months
+>    - [ ] Classification
+>    - [x] Regression
+> 2. You'd like a software to examine individual customer accounts and for eact account, decide if it has been hacked or compromised
+>    - [x] Classification
+>    - [ ] Regression
+> 3. Given a picture of a person, you'd have to predict their age
+>    - [ ] Classification
+>    - [x] Regression
+> 4. Given a patient with tumor, you'd have to predict whether the tumor is malignant or benign
+>    - [x] Classification
+>    - [ ] Regression
 
 
+
+## Unsupervised Learning
+
+* The algorithm has to find some structure in a given dataset
+
+* Clustering Algorithm
+
+  ![Clustering Algorithm](images/image03.PNG)
+
+* The algorithm doesn't know in advance any answer for any part of the dataset
+
+* Some use cases
+
+  * Organize Computer Clusters
+  * Market Segmentation
+  * Social Network Analysis
+  * Atrnomical Data Analysis
 
