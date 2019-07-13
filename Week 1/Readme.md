@@ -87,3 +87,16 @@ Basic definition and understanding of what is Machine Learning and what are the 
   * Social Network Analysis
   * Astronomical Data Analysis
 
+### Cocktail Party Problem
+
+* Unsupervised learning problem
+* Objective is to separate voice from background music of a person speaking over phone in a cocktail party
+* Solution: ` [W, s, v] = svd((repmat(sum(x. *x, 1), size(x, 1), 1). *x) *x') `
+
+> Which of the following can be addressed using an unsupervised learning algorithm?
+>
+> * [ ] Given emails labelled as 'spam' or 'not-spam', learn a spam filter
+> * [x] Given a set of news articles found of the web, group them into set of items about the same story
+> * [x] Given a database of customer data, automatically discover market segments and group customers into different market segments
+> * [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not
+
