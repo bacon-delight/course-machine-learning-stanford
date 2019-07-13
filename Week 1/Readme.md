@@ -45,11 +45,11 @@ Basic definition and understanding of what is Machine Learning and what are the 
 
 * Also called "Regression Problems", predicts continuous valued output
 
-  ![Housing Price Prediction](images/image01.PNG)
+  ![Housing Price Prediction](images/image01.png)
 
 * Can also be a Classification Problem, which can predict discrete values
 
-  ![Tumor Classification](images/image02.PNG)
+  ![Tumor Classification](images/image02.png)
 
 * Small and limited number of features
 
@@ -76,7 +76,7 @@ Basic definition and understanding of what is Machine Learning and what are the 
 
 * Clustering Algorithm
 
-  ![Clustering Algorithm](images/image03.PNG)
+  ![Clustering Algorithm](images/image03.png)
 
 * The algorithm doesn't know in advance any answer for any part of the dataset
 
