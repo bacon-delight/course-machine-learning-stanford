@@ -6,7 +6,7 @@ Basic definition and understanding of what is Machine Learning and what are the 
 
 ## Machine Learning
 
-### Use Cases in Real Life
+#### Use Cases in Real Life:
 
 * Database Mining
   * Large Datasets
