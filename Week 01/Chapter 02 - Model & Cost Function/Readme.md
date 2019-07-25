@@ -61,7 +61,7 @@ The black line represents the Hypothesis. This model is called **Univariate Line
 
 #### Choosing the Values of $\theta _0$ and $\theta _1$
 
-![Choosing Values](images/image06.PNG)
+![Choosing Values](images/image06.png)
 
 * Choose $\theta _0$ and $\theta _1$ so that $h _\theta (x)$ is close to $y$ for our training examples
 
@@ -115,7 +115,7 @@ J(\theta_1) &= \frac{1}{2m} \sum^m_{i=1} (h_\theta(x^{(i)})-y^{(i)})^2 \\
 &= 0
 \end{align*}
 $$
-![Theta 1 = 1](images/image07.PNG)
+![Theta 1 = 1](images/image07.png)
 
 ##### When $\theta_1=0.5$:
 $$
@@ -130,7 +130,7 @@ J(\theta_1) &= \frac{1}{2m} \sum^m_{i=1} (h_\theta(x^{(i)})-y^{(i)})^2 \\
 \end{align*}
 $$
 
-![Theta 1 = 0.5](images/image08.PNG)
+![Theta 1 = 0.5](images/image08.png)
 
 ##### When $\theta_1=0$:
 
@@ -145,11 +145,11 @@ J(\theta_1) &= \frac{1}{2m} \sum^m_{i=1} (h_\theta(x^{(i)})-y^{(i)})^2 \\
 \end{align*}
 $$
 
-![Theta 1 = 0](images/image09.PNG)
+![Theta 1 = 0](images/image09.png)
 
 ##### Plot for $J(\theta_1)$ as a function of parameter $\theta_1$:
 
-![Plot of Cost Function with one parameter](images/image10.PNG)
+![Plot of Cost Function with one parameter](images/image10.png)
 
 The value that minimizes $J(\theta_1)$ here is $J(\theta_1) = 1$ for this particular dataset
 
@@ -179,7 +179,7 @@ $$
 
 Let's make a random hypothesis on a training set of housing prices:
 
-![Random Hypothesis on Training Set of Housing Prices](images/image11.PNG)
+![Random Hypothesis on Training Set of Housing Prices](images/image11.png)
 
 Here,
 $
@@ -190,29 +190,29 @@ $
 
 Plot for $J(\theta_1)$ as a function of parameter $\theta_1$ and $\theta_1$:
 
-![Plot of Cost Function with two parameters](images/image12.PNG)
+![Plot of Cost Function with two parameters](images/image12.png)
 
 ##### Example 1:
 
-![Contour Example 1](images/image13.PNG)
+![Contour Example 1](images/image13.png)
 
 Selected point (cost) will have $\theta_0 = 800$ and $\theta_1=-0.15$, which isn't a good fit for the data
 
 ##### Example 2:
 
-![Contour Example 2](images/image14.PNG)
+![Contour Example 2](images/image14.png)
 
 Selected point (cost) will have $\theta_0 = 360$ and $\theta_1 = 0$, which isn't a good fit for the data
 
 ##### Example 3:
 
-![Contour Example 3](images/image15.PNG)
+![Contour Example 3](images/image15.png)
 
 Selected point (cost) will have $\theta_0 = 500$ and $\theta_1 = 0$, which isn't a good fit for the data
 
 #### Example 4:
 
-![Contour Example 4](images/image16.PNG)
+![Contour Example 4](images/image16.png)
 
 Selected point (cost) will have $\theta_0 = 250$ and $\theta_1 = 0.15$, which looks like a good fit for the data, even though it's not quite at the minimum
 
