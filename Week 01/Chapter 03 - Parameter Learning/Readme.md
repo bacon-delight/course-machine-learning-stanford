@@ -172,8 +172,8 @@ $$
 $$
 We get two cases,
 $$
-\theta_0 \sdot j = 0 : \frac{\partial}{\partial \theta_0} J(\theta_0, \theta_1) = \frac{1}{m} \sdot \sum^m_{i=1} \sdot (h_\theta (x^{(i)}) - y^{(i)}) \\
-\theta_1 \sdot j = 1 : \frac{\partial}{\partial \theta_1} J(\theta_0, \theta_1) = \frac{1}{m} \sdot \sum^m_{i=1} \sdot (h_\theta (x^{(i)}) - y^{(i)}) \sdot x^{(i)}
+[For \space \theta_0] \space j = 0 : \frac{\partial}{\partial \theta_0} J(\theta_0, \theta_1) = \frac{1}{m} \sdot \sum^m_{i=1} \sdot (h_\theta (x^{(i)}) - y^{(i)}) \\
+[For \space \theta_1] \space j = 1 : \frac{\partial}{\partial \theta_1} J(\theta_0, \theta_1) = \frac{1}{m} \sdot \sum^m_{i=1} \sdot (h_\theta (x^{(i)}) - y^{(i)}) \sdot x^{(i)}
 $$
 Plugging these into Gradient Descent Algorithm, we get,
 
@@ -191,3 +191,17 @@ $$
 >
 > - This method is also called **Batch Gradient Descent**, because each step of Gradient Descent uses all of the training examples
 > - Gradient Descent is **NOT** guaranteed to find the global minimum for any function $J(\theta_0, \theta_1)$
+
+
+
+Cost Function for Linear Regression will always be a **Convex Function**:
+
+![Cost Function for Linear Regression](images/image09.png)
+
+> Which of the following are true statements?
+>
+> - [ ] To make gradient descent coverage, we must slowly decrease $\alpha$ over time
+> - [ ] Gradient descent is guaranteed to find the global minimum for any function $J(\theta_0, \theta_1)$
+> - [x] Gradient descent can converge even if $\alpha$ is kept fixed (But $\alpha$ cannot be too large, or else it may fail to converge)
+> - [x] For the specific choice of cost function $J(\theta_0, \theta_1)$ used in linear regression, there are no local optima (other than the global optimum)
+
