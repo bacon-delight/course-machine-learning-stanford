@@ -66,7 +66,7 @@ pinv(X'*X)*X'*y
 
 #### What if $X^T X$ is non-invertible?
 
-In rare cases, $X^T X$ might turn out to be non-invertible (singular/degenerate). Our Octave code which we’re using will take care of it (since we’re using **pinv** instead of **inv**).
+In rare cases, $X^T X$ might turn out to be non-invertible (singular/degenerate). Our Octave code which we’re using will take care of it (since we’re using **pinv** (pseudo inverse) instead of **inv**).
 
 Causes for this:
 
