@@ -1,6 +1,10 @@
 # Week 2
 
-## Contents:
+
+
+### Contents:
 
 - Multivariate Linear Regression
+
+- Computing Parameters Analytically
 

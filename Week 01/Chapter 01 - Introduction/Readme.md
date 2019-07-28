@@ -4,9 +4,9 @@ Basic definition and understanding of what is Machine Learning and what are the 
 
 
 
-## Machine Learning
+### Machine Learning
 
-#### Use Cases in Real Life:
+##### Use Cases in Real Life:
 
 * Database Mining
   * Large Datasets
@@ -26,7 +26,9 @@ Basic definition and understanding of what is Machine Learning and what are the 
   * The Human Brain
   * Real Artificial Intelligence
 
-### What is Machine Learning?
+
+
+##### What is Machine Learning?
 
 * Field of study that gives computers the ability to learn without being explicitly programmed.
 * A learning problem is said to learn from experience 'E' with respect to some task 'T' and some performance measure 'P', if its performance on 'T' as measured by 'P' improves with experience 'E'.
@@ -53,6 +55,8 @@ Basic definition and understanding of what is Machine Learning and what are the 
 
 * Small and limited number of features
 
+
+
 > Are the following problems classification or regression problems?
 >
 > 1. You have a large inventory of identical items. You want to predict how many of these will sell over the next three months
@@ -67,6 +71,8 @@ Basic definition and understanding of what is Machine Learning and what are the 
 > 4. Given a patient with tumour, you'd have to predict whether the tumour is malignant or benign
 >    - [x] Classification
 >    - [ ] Regression
+
+
 
 
 
@@ -86,6 +92,8 @@ Basic definition and understanding of what is Machine Learning and what are the 
   * Market Segmentation
   * Social Network Analysis
   * Astronomical Data Analysis
+
+
 
 ### Cocktail Party Problem
 

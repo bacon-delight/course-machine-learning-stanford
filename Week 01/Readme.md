@@ -1,6 +1,6 @@
 # Week 1
 
-## Contents:
+### Contents:
 
 - Introduction
 - Model and Cost Function

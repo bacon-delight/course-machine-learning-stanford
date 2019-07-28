@@ -2,7 +2,7 @@
 
 
 
-## Gradient Descent
+### Gradient Descent
 
 ![Gradient Descent](images/image01.PNG)
 
@@ -16,15 +16,21 @@ We will know that we have succeeded when our cost function is at the very bottom
 
 For example, the distance between each 'star' in the graph above represents a step determined by our parameter $\alpha $. A smaller $\alpha $ would result in a smaller step and a larger α results in a larger step. The direction in which the step is taken is determined by the partial derivative of $J(\theta_0,\theta_1)$. Depending on where one starts on the graph, one could end up at different points. The image above shows us two different starting points that end up in two different places.
 
+
+
 #### Problem Setup:
 
 - Have some function $J(\theta_0, \theta_1)$
 - Objective is to $min_{\theta_0, \theta_1} J(\theta_0, \theta_1)$
 
+
+
 #### Outline:
 
 - Start with some $\theta_0, \theta_1$
 - Keep changing $\theta_0, \theta_1$ to reduce $J(\theta_0, \theta_1)$ until we hopefully end up at a minimum
+
+
 
 #### Algorithm:
 
@@ -47,10 +53,14 @@ Here,
 
 - $\alpha$ is the learning rate
 
+
+
 **Note:**
 
 - Assignment Operator will be denoted by $a:=b$ (takes the value of $b$ and overwrite the value of $a$ with that value)
 - Truth Assertion Operator will be denoted by $a=b$ (assert/claim that the value of $a$ is equal to the value of $b$)
+
+
 
 Example of **incorrect** implementation of simultaneous update (can behave in strange ways):
 $$
