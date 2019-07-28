@@ -61,3 +61,27 @@ pinv(X'*X)*X'*y
 >  ###### When to use Normal Equation?
 >
 > We can comfortably use normal equation **when the value of ‘n’ (features) is less than 10,000**. More than that, mordern computers will take a lot of time for computation.
+
+
+
+#### What if $X^T X$ is non-invertible?
+
+In rare cases, $X^T X$ might turn out to be non-invertible (singular/degenerate). Our Octave code which we’re using will take care of it (since we’re using **pinv** instead of **inv**).
+
+Causes for this:
+
+- Redundant features (linearly dependent)
+
+    For example, we might have two features like:
+
+    - $x_1$ = size in $feet^2$
+    - $x_2$ = size in $m^2$
+
+- Too many features ($m \leq n$)
+
+    $m$ = Number of training examples
+
+    $n$ = Number of features
+
+    Delete some features in this case, or use regularization
+
