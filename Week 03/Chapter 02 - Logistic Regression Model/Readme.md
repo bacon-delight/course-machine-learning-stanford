@@ -74,7 +74,7 @@ $$
 
 
 
-## Simplifying the Cost Function
+## Simplifying the Cost Function & Gradient Descent
 
 We have our cost function:
 $$
@@ -135,3 +135,60 @@ $$
 (or) \\[2ex]
 \theta := \theta - \frac{\alpha}{m} \sdot X^T (g(X\theta) - \overrightarrow{y}
 $$
+
+
+
+
+## Advanced Optimization
+
+Let’s revise what gradient descent actuatlly does:
+
+- We have a cost function $J(\theta)$ and we want to minimize $\theta$.
+- For minimizing $\theta$, we write code that can compute:
+    - $J(\theta)$
+    - $\frac{\partial}{\partial \theta_j} J(\theta)$   [For $j=0, 1, 2, \cdots,n$]
+- The above gets plugged into gradient descent
+
+
+
+Optimization algorithms which can be used:
+
+- Gradient Descent
+- Conjugate Gradient
+- BFGS
+- L-BFGS
+
+The three other algorithms doesn’t need manual selection of the learning rate $\alpha$ and often converges much faster than gradient descent. However, they’re more complex.
+
+
+
+Let’s consider an example,
+$$
+\theta =
+\begin{bmatrix}
+\theta_1 \\
+\theta_2
+\end{bmatrix}
+\quad \quad \quad \quad
+J(\theta) = (\theta_1 - 5)^2 + (\theta_2 - 5)^2 \\
+\frac{\partial}{\partial \theta_1} J(\theta) = 2(\theta_1 -5) \\
+\frac{\partial}{\partial \theta_2} J(\theta) = 2(\theta_2 -5)
+$$
+For implementation in Octave,
+
+```octave
+function [jVal, gradient] = costFunction(theta)
+	jVal = (theta(1)-5)^2 + (theta(2)-5)^2;
+	gradient = zeros(2,1);
+	gradient(1) = 2*(theta(1)-5);
+	gradient(2) = 2*(theta(2)-5);
+```
+
+Now to call the advanced optimization functions in Octave,
+
+```octave
+options = optimset('GradObj', 'on', 'MaxIter', '100');
+initialTheta = zeros(2,1);
+[optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
+```
+
