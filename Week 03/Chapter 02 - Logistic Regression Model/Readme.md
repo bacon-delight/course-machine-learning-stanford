@@ -76,3 +76,62 @@ $$
 
 ## Simplifying the Cost Function
 
+We have our cost function:
+$$
+cost(h_\theta(x), y) =
+\begin{cases}
+-log(h_\theta(x)) & \text{if $y=1$} \\[2ex]
+-log(1- h_\theta(x)) & \text{if $y=0$}
+\end{cases}
+$$
+We can write the cost function in a simpler way as follows:
+$$
+cost(h_\theta(x), y) = -y \sdot log(h_\theta(x)) - (1-y) \sdot log(1- h_\theta(x))
+$$
+Therefore,
+$$
+\begin{align}
+J(\theta) &= \frac{1}{m} \sdot \sum_{i=1}^m cost(h_\theta(x^{(i)}) - y^{(i)}) \\
+&= - \frac{1}{m} \Biggl[\sum_{i=1}^m y^{(i)} \sdot log(h_\theta(x^{(i)})) + (1-y^{(i)}) \sdot log(1-h_\theta(x^{(i)})) \Biggr]
+\end{align}
+$$
+To fit the parameters $\theta$, minimize $J(\theta)$ for $\theta$
+
+To give a prediction from new $x$, output $h_\theta(x) = \frac{1}{1+e^{- \theta^T x}}$
+
+
+
+#### Gradient Descent
+
+$$
+J(\theta) = - \frac{1}{m} \Biggl[\sum_{i=1}^m y^{(i)} \sdot log(h_\theta(x^{(i)})) + (1-y^{(i)}) \sdot log(1-h_\theta(x^{(i)})) \Biggr]
+$$
+
+We want to minimize $\theta$ in $J(\theta)$:
+
+*repeat* {
+$$
+\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)
+$$
+} [Simultaneously update all $\theta_j$]
+
+This update rule is exactly the same as Linear Regression, except the fact that the hypothesis has changed
+
+
+
+$\theta$ updates on every iteration:
+$$
+\theta_0 := \theta_0 - \alpha \sdot \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) \sdot x_0^{(i)} \\
+\theta_1 := \theta_1 - \alpha \sdot \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) \sdot x_1^{(i)} \\
+\theta_2 := \theta_2 - \alpha \sdot \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) \sdot x_2^{(i)} \\
+\vdots \\
+\theta_n := \theta_n - \alpha \sdot \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) \sdot x_n^{(i)}
+$$
+
+
+Vectorized implementation of $\theta$ updates (instead of using a ‘for’ loop):
+$$
+\theta := \theta - \alpha \sdot \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) \sdot x^{(i)} \\[2ex]
+(or) \\[2ex]
+\theta := \theta - \frac{\alpha}{m} \sdot X^T (g(X\theta) - \overrightarrow{y}
+$$
