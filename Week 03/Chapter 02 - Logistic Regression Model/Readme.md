@@ -192,3 +192,37 @@ initialTheta = zeros(2,1);
 [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
 ```
 
+
+
+
+
+## Multiclass Classification
+
+Suppose we have classification problems such as email tagging or classifying weather, $y$ can have different values for each type, such as:
+
+| Example           | y=1        | y=2     | y=4    | y=4        |
+| ----------------- | ---------- | ------- | ------ | ---------- |
+| Email Tagging     | Work       | Friends | Family | Promotions |
+| Medical Diagnosis | No Disease | Cold    | Flu    |            |
+| Weather           | Sunny      | Rain    | Snow   | Cloudy     |
+
+![Multiclass vs Binary](images/image05.png)
+
+
+
+## One vs Rest
+
+![One vs Rest](images/image06.png)
+
+We can have a problem where we might want to differentiate one class from the rest. We will have a hypothesis such as:
+$$
+h_\theta^{(i)}(x) = {(y=i \space | \space x;\theta)}
+\quad \quad \quad \quad \quad \quad \quad \quad \quad
+(i=1, 2, 3)
+$$
+Train a logistic regression classifier $h_\theta^{(i)}(x)$ for each class $i$ to predict the probability that $y=i$.
+
+On a new input $x$, to make a prediction, pick the class $i$ that maximizes:
+$$
+\max_i (h_\theta^{(i)}(x))
+$$
