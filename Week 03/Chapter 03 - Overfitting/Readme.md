@@ -51,7 +51,7 @@ We’ll end up with $\theta_3 \approx 0$ and $\theta_4 \approx 0$, which will es
 
 
 
-#### Regularization
+## Regularized Linear Regression
 
 If we have small values for the parameters $\theta_0, \theta_1, \cdots, \theta_n$
 
@@ -99,4 +99,70 @@ $$
 }
 
 Here $(1 - \alpha \frac{\lambda}{m}) < 1$
+
+
+
+#### Normal Equation
+
+$$
+X =
+\begin{bmatrix}
+(x^{(1)})^T \\
+(x^{(2)})^T \\
+\vdots \\
+(x^{(m)})^T
+\end{bmatrix}_{m*(n+1)}
+
+\quad \quad \quad \quad
+y =
+\begin{bmatrix}
+y^{(1)} \\
+y^{(2)} \\
+\vdots \\
+y^{(m)}
+\end{bmatrix}
+$$
+
+Objective is to $\min_\theta J(\theta)$
+
+Where,
+$$
+\theta = \Biggl((X^T \sdot X) + \lambda \sdot
+\begin{bmatrix}
+0 & 0 & \cdots & 0 \\
+0 & 1 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & 1 \\
+\end{bmatrix}_{(n+1)}
+\Biggr)^{-1} \sdot X^T y
+$$
+
+
+
+## Regularized Logistic Regression
+
+![Overfitting Logistic Regression](images/image02.png)
+
+Suppose we have our hypothesis as:
+$$
+h_\theta(x) = g(\theta_0 + \theta_1x_1 + \theta_2 x_1^2 + \theta_3 x_1^2 x_2 + \theta_4 x_1^2 x_2^2 + \theta_5 x_1^2 x_2^3 + \cdots)
+$$
+Our cost function will be:
+$$
+J(\theta) = - \biggl[\frac{1}{m} \sum_{i=1}^m y^{(i)} \log h_\theta (x^{(i)}) + (1-y^{(i)}) \log (1-h_\theta(x^{(i)})) \biggr] + \frac{\lambda}{2m} \sum_{j=1}^n \theta_j^2
+$$
+
+
+#### Gradient Descent
+
+*repeat* {
+$$
+\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})x_0^{(i)} \\
+\vdots \\
+\theta_j := \theta_j - \alpha \Biggl[\frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})x_j^{(i)} + \frac{\lambda}{m} \theta_j \Biggr]
+\quad \quad [j=1,2,3,\cdots,n]
+$$
+}
+
+![Advanced Optimization](images/image03.png)
 
