@@ -10,12 +10,12 @@ J(\theta) = \frac{1}{2m} \Bigg[\sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)}) + \lambd
 $$
 If we test test the hypothesis on a new set of houses, and it ends up making predictions with huge errors, we can try the following:
 
-- Get more training examples
-- Try smaller set of features
-- Try getting additional features 
-- Try adding polynomial features ($x_1^2, x_2^2, \cdots, x_1 \sdot x_2$, etc)
-- Try decreasing $\lambda$ (Regularization Parameter)
-- Try increasing $\lambda $ (Regularization Parameter)
+- Get more training examples - Fixes high variance
+- Try smaller set of features - Fixes high variance
+- Try getting additional features - Fixes high bias sometimes
+- Try adding polynomial features ($x_1^2, x_2^2, \cdots, x_1 \sdot x_2$, etc) - Fixes high bias usually
+- Try decreasing $\lambda$ (Regularization Parameter) - Fixes high bias
+- Try increasing $\lambda $ (Regularization Parameter) - Fixes high variance
 
 
 
