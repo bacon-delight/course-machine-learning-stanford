@@ -9,7 +9,7 @@ There are two ways that our model can end up not performing well:
 
 Overfitting occurs if we have too many features and the learnt hypothesis fits the training set too well and may even turn out to be 0 or close to 0, but fail to generalize new examples
 $$
-J(\theta) = \frac{1}{2m} \sum_{i=1}*m (h_\theta(x^{(i)})-y^{(i)})^2 \approx 0
+J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})^2 \approx 0
 $$
 
 

@@ -108,7 +108,7 @@ When m=1, 2 or 3, the Training Error on the Training Set is going to be 0, assum
 
 <img src="images/image07.png" alt="High Bias" style="zoom: 67%;" />
 
-<img src="images/image08.png" alt="High Variance" style="zoom:67%;" />
+<img src="images/image08.png" alt="High Variance" style="zoom: 67%;" />
 
 
 

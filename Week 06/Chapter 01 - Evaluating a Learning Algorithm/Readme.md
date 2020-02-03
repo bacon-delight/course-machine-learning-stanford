@@ -46,9 +46,9 @@ So, a good practice would be:
 
 - For Logistic Regression:
 
-    - Learn parameter $\theta $ from the training data\
+    - Learn parameter $\theta $ from the training data
 
-    - Compute the test set error:\
+    - Compute the test set error:
         $$
         J_{test}(\theta) = -\frac{1}{m_{test}} \sum_{i=1}^{m_{test}} y_{test}^{(i)} \log h_\theta (x_{test}^{(i)}) + (1-y_{test}^{(i)}) \log h_\theta (x_{test}^{(i)})
         $$

@@ -202,7 +202,7 @@ $$
 
 ##### Examples of Gradient Descent not working:
 
-![Error 1](images/image03.png) ![Error 2](images/image05.png) 
+<img src="images/image04.png" alt="Error 1" style="zoom: 150%;" /> <img src="images/image05.png" alt="Error 2" style="zoom: 80%;" /> 
 
 ![Error 3](images/image06.png)
 
