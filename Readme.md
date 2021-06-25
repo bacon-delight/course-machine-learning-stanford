@@ -2,6 +2,10 @@
 
 This repository contains notes taken from Coursera's Stanford Machine Learning course by Andrew Ng
 
+## Migration Notice
+Contents here are further refined and moved to:
+- ML Related Stuff: https://ml.solidify.space/
+- NN Related Stuff: https://dl.solidify.space/
 
 
 ## Requirement:
