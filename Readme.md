@@ -6,6 +6,7 @@ This repository contains notes taken from Coursera's Stanford Machine Learning c
 Contents here are further refined and moved to:
 - ML Related Stuff: https://ml.solidify.space/
 - NN Related Stuff: https://dl.solidify.space/
+- Math: https://math.solidify.space/
 
 
 ## Requirement:
